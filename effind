@@ -4,7 +4,7 @@ else
 	editor=$2
 fi
 
-files=`find . -iname "*$1*" | grep -v Binary | grep -v .svn | grep -v .git`
+files=`find . -iname "*$1*" -not -type 'd' | grep -v Binary | grep -v .svn | grep -v .git`
 n=1
 for f in $files
 do
