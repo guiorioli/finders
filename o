@@ -1,0 +1,6 @@
+if [ $# -lt 2 ]; then
+	opener=`cat ~/.config/finders/o`
+else
+	opener=$2
+fi
+`$opener $1`

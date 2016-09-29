@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -name "$1" | grep -v Binary | grep -v .svn | grep $1 --color=always

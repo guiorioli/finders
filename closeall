@@ -1,0 +1,20 @@
+#!/bin/bash
+if [ ! -z $1 ]; then
+    for pid in `ps -ef | grep $1 | grep -v grep | grep -v $(basename $0) | awk '{print $2}'`
+    do
+        for window in `wmctrl -l -p | grep $pid | awk '{print $1}'`
+        do
+            echo closing $window
+            wmctrl -c $window -i
+            sleep 1
+        done
+    done
+else
+    test=`echo $0 | cut -c1-2`
+    if [ $test == './' ]; then
+        sw_name=$0
+    else
+        sw_name=$(basename $0)
+    fi
+    echo "Usage: $sw_name <name>"
+fi
