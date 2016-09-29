@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/.config/finders
-echo geany > ~/.config/finders/e
+echo gedit > ~/.config/finders/e
 echo xdg-open > ~/.config/finders/o
 
 cd `dirname $0`

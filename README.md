@@ -20,7 +20,7 @@ Additionally, to accelerate opening files:
  * o: open given file using default X opener
 
 Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/finders/o, respectivelly
- * Default e editor: geany
+ * Default e editor: gedit
  * Default o editor: xdg-open
 
 ### Usage
