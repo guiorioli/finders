@@ -7,8 +7,14 @@ echo xdg-open > ~/.config/finders/o
 cd `dirname $0`
 path=`pwd`
 
+arg=$1
+
 installscript(){
-    ln -s $path/$1 /usr/bin/$1 
+	if [[ $arg == "--links" ]]; then
+		ln -s $path/$1 /usr/bin/$1 
+	else
+		cp $1 /usr/bin/$1
+	fi
 }
 
 installscript xfind
