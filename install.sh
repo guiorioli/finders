@@ -1,13 +1,28 @@
 #!/bin/bash
 
 mkdir -p ~/.config/finders
-echo gedit > ~/.config/finders/e
-echo xdg-open > ~/.config/finders/o
 
 cd `dirname $0`
 path=`pwd`
 
 arg=$1
+
+
+if [ ! -e ~/.config/finders/e ]; then
+	echo "Please, enter the command line to your prefered text editor (Example: gedit, geany...)"
+	printf "> "
+	read editor
+	if [ editor == "" ];then
+		editor="gedit"
+	fi
+	echo $editor > ~/.config/finders/e
+	echo "'e' configured"
+fi
+if [ ! -e ~/.config/finders/o ]; then
+	echo xdg-open > ~/.config/finders/o
+	echo "'o' configured"
+fi
+
 
 installscript(){
 	if [[ $arg == "--links" ]]; then
@@ -15,6 +30,7 @@ installscript(){
 	else
 		cp $1 /usr/bin/$1
 	fi
+	echo Installed $1.
 }
 
 installscript xfind
