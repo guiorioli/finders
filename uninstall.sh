@@ -12,3 +12,5 @@ uninstallscript closeall
 uninstallscript e
 uninstallscript o
 uninstallscript killer
+
+rm -r ~/.config/finders/
