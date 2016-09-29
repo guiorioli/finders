@@ -1,8 +1,8 @@
 #!/bin/sh
 
-ps -ef | grep $1 | grep -v grep | grep -v killall.sh
+ps -ef | grep $1 | grep -v grep | grep -v killer
 
-for pid in `ps -ef | grep $1 | grep -v grep | grep -v killall.sh | awk '{print $2}'`
+for pid in `ps -ef | grep $1 | grep -v grep | grep -v killer | awk '{print $2}'`
 do
   printf "Matando processo $pid ... \n"
   kill -9 $pid
