@@ -13,6 +13,7 @@ installscript(){
 
 installscript xfind
 installscript ffind
+installscript effind
 installscript closeall
 installscript e
 installscript o

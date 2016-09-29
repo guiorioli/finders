@@ -9,6 +9,7 @@ It was the case for these "finds" which I added to scripts:
 
  * xfind: Search for text inside all files in current folder (recursive)
  * ffind: Search for given filename in all files in current folder (recursive, case insensitive)
+ * effind: Searchs for given filename, displays a list of option, lets you open one, using 'e'
  * killer: Kills all PIDs found with given name
  * closeall: Tries to close all given PID windows using wmctrl (not killing, closing)
  

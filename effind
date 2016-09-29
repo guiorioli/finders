@@ -1,0 +1,28 @@
+if [ $# -lt 2 ]; then
+	editor=`cat ~/.config/finders/e`
+else
+	editor=$2
+fi
+
+files=`find . -iname "*$1*" | grep -v Binary | grep -v .svn`
+n=1
+for f in $files
+do
+	echo "[$n] $f"
+	n=$((n+1))
+done
+echo File to open \(0 to quit\)
+printf "> "
+read number
+n=1
+for f in $files
+do
+	if [ $n -eq $number ]; then
+		echo Opening $f
+		echo $editor $f \&
+		$editor $f &		
+		break
+	fi
+	n=$((n+1))
+done
+
