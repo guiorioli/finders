@@ -1,8 +1,9 @@
 ## Find tools for linux
 
-To install:
+### To install
 `sudo ./install.sh`
 
+### About
 Linux has a lot of powerful tools for anything you may want.
 But sometimes it just feels like much time is wasted to type some often needed commands.
 It was the case for these "finds" which I added to scripts:
@@ -21,3 +22,18 @@ Additionally, to accelerate opening files:
 Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/finders/o, respectivelly
  * Default e editor: geany
  * Default o editor: xdg-open
+
+### Usage
+ * xfind <text_inside_file>
+ * ffind <partial or full file name>
+ * effind <partial or full file name>
+   * will prompt for choosing one file
+ * offind <partial or full file name>
+   * will prompt for choosing one file
+ * killer <process name>
+ * closeall <process name>
+ 
+ * e <file name>
+ * e <file name> <editor>
+ * o <file name>
+ * o <file name> <editor>
