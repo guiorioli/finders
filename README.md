@@ -1,5 +1,8 @@
 ## Find tools for linux
 
+To install:
+`sudo ./install.sh`
+
 Linux has a lot of powerful tools for anything you may want.
 But sometimes it just feels like much time is wasted to type some often needed commands.
 It was the case for these "finds" which I added to scripts:
