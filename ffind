@@ -1,2 +1,2 @@
 #!/bin/sh
-find . -iname "*$1*" | grep -v Binary | grep -v .svn | grep -i $1 --color=always
+find . -iname "*$1*" | grep -v Binary | grep -v .svn | grep -v .git | grep -i $1 --color=always

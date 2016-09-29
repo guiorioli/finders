@@ -3,4 +3,4 @@ if [ $# -lt 2 ]; then
 else
 	opener=$2
 fi
-$opener $1 &
+nohup $opener $1 &
