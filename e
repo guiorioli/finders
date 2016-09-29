@@ -3,4 +3,4 @@ if [ $# -lt 2 ]; then
 else
 	editor=$2
 fi
-nohup $editor $1 &
+$editor $1 &

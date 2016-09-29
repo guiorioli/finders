@@ -20,7 +20,7 @@ do
 	if [ $n -eq $number ]; then
 		echo Opening $f
 		echo $editor $f \&
-		nohup $editor $f &		
+		$editor $f &		
 		break
 	fi
 	n=$((n+1))
