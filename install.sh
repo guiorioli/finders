@@ -10,6 +10,7 @@ arg=$1
 
 if [ ! -e ~/.config/finders/e ]; then
 	echo "Please, enter the command line to your prefered text editor (Example: gedit, geany...)"
+	echo "(doesn't work with vi, since it's already awesome)"
 	printf "> "
 	read editor
 	if [ editor == "" ];then
