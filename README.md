@@ -3,6 +3,9 @@
 ### To install
 `sudo ./install.sh`
 
+### To uninstall
+`sudo ./uninstall.sh`
+
 ### About
 Linux has a lot of powerful tools for anything you may want.
 But sometimes it just feels like much time is wasted to type some often needed commands.
