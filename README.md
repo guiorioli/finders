@@ -24,16 +24,16 @@ Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/
  * Default o editor: xdg-open
 
 ### Usage
- * xfind <text_inside_file>
- * ffind <partial or full file name>
- * effind <partial or full file name>
+ * xfind \<text_inside_file\>
+ * ffind \<partial or full file name\>
+ * effind \<partial or full file name\>
    * will prompt for choosing one file
- * offind <partial or full file name>
+ * offind \<partial or full file name\>
    * will prompt for choosing one file
- * killer <process name>
- * closeall <process name>
+ * killer \<process name\>
+ * closeall \<process name\>
  
- * e <file name>
- * e <file name> <editor>
- * o <file name>
- * o <file name> <editor>
+ * e \<file name\>
+ * e \<file name\> \<editor\>
+ * o \<file name\>
+ * o \<file name\> \<editor\>
