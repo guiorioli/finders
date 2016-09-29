@@ -8,7 +8,7 @@ files=`find . -iname "*$1*" | grep -v Binary | grep -v .svn`
 n=1
 for f in $files
 do
-	echo "[$n] $f"
+	echo "[$n] $f" | grep "$1" --color=always
 	n=$((n+1))
 done
 echo File to open \(0 to quit\)
