@@ -1,2 +1,2 @@
 #!/bin/sh
-find . -name "*" | xargs grep $1 | grep -v Binary | grep -v .svn | grep -v .git | grep $1 --color=always
+find . -name "*" -not -type 'd' | xargs grep -i $1 | grep -v Binary | grep -v .svn | grep -v .git | grep -i $1 --color=always
