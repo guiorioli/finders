@@ -4,4 +4,4 @@ if [ $# -lt 2 ]; then
 else
 	editor=$2
 fi
-$editor $1 &
+$editor $1 2>/dev/null &

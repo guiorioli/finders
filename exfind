@@ -24,7 +24,7 @@ do
 	if [ $n -eq $number ]; then
 		echo Opening $line
 		echo $editor $line \&
-		$editor $line &		
+		$editor $line 2>/dev/null &		
 		break
 	fi
 	n=$((n+1))
