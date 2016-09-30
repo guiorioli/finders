@@ -26,6 +26,10 @@ fi
 
 
 installscript(){
+	if [ -f /usr/bin/$1 ]; then
+		echo $1 already installed.
+		return
+	fi
 	if [[ $arg == "--links" ]]; then
 		ln -s $path/$1 /usr/bin/$1 
 	else
