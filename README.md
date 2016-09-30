@@ -12,6 +12,7 @@ But sometimes it just feels like much time is wasted to type some often needed c
 It was the case for these "finds" which I added to scripts:
 
  * xfind: Search for text inside all files in current folder (recursive)
+ * exfind: Search for text inside all files in current folder (recursive), lets you open one, using 'e'
  * ffind: Search for given filename in all files in current folder (recursive, case insensitive)
  * effind: Searchs for given filename, displays a list of option, lets you open one, using 'e'
  * offind: Searchs for given filename, displays a list of option, lets you open one, using 'o'
@@ -28,6 +29,8 @@ Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/
 
 ### Usage
  * xfind \<text_inside_file\>
+ * exfind \<text_inside_file\>
+   * will prompt for choosing one file
  * ffind \<partial or full file name\>
  * effind \<partial or full file name\>
    * will prompt for choosing one file

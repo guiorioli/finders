@@ -35,6 +35,7 @@ installscript(){
 }
 
 installscript xfind
+installscript exfind
 installscript ffind
 installscript effind
 installscript offind

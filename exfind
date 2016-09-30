@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+	editor=`cat ~/.config/finders/e`
+else
+	editor=$2
+fi
+
+files=`find . -name "*" -not -type 'd' | xargs grep -i $1 | grep -v Binary | grep -v .svn | grep -v .git | grep -i $1 --color=always`
+n=1
+while read -r line
+do
+	#| cut -d':' -f1
+	echo "[$n] $line"
+	n=$((n+1))
+done <<< "$files"
+echo File to open \(0 to quit\)
+printf "> "
+read number
+files=`find . -name "*" -not -type 'd' | xargs grep -i $1 | grep -v Binary | grep -v .svn | grep -v .git | cut -d':' -f1`
+n=1
+while read -r line
+do
+	if [ $n -eq $number ]; then
+		echo Opening $line
+		echo $editor $line \&
+		$editor $line &		
+		break
+	fi
+	n=$((n+1))
+done <<< "$files"

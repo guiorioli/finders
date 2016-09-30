@@ -5,6 +5,7 @@ uninstallscript(){
 }
 
 uninstallscript xfind
+uninstallscript exfind
 uninstallscript ffind
 uninstallscript effind
 uninstallscript offind
