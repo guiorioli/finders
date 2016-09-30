@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -lt 2 ]; then
 	editor=`cat ~/.config/finders/o`
 else
@@ -20,9 +21,8 @@ do
 	if [ $n -eq $number ]; then
 		echo Opening $f
 		echo $editor $f \&
-		$editor $f &		
+		$editor $f &
 		break
 	fi
 	n=$((n+1))
 done
-

@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -lt 2 ]; then
 	editor=`cat ~/.config/finders/e`
 else
