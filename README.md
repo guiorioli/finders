@@ -3,6 +3,11 @@
 ### To install
 `sudo ./install.sh`
 
+Alternatively, you can install only links to the folder where this git repo was cloned.<br/>
+(So that, when you git pull changes, all scripts are automatically updated)<br/>
+`sudo ./install.sh --links`
+
+
 ### To uninstall
 `sudo ./uninstall.sh`
 
@@ -18,13 +23,13 @@ It was the case for these "finds" which I added to scripts:
  * offind: Searchs for given filename, displays a list of option, lets you open one, using 'o'
  * killer: Kills all PIDs found with given name
  * closeall: Tries to close all given PID windows using wmctrl (not killing, closing)
- 
+
 Additionally, to accelerate opening files:
  * e: edit given file with given editor
  * o: open given file using default X opener
 
 Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/finders/o, respectivelly
- * Default e editor: gedit
+ * Default e editor: configured during install
  * Default o editor: xdg-open
 
 ### Usage
@@ -38,7 +43,7 @@ Both 'e' and 'o' editors can be configured in ~/.config/finders/e and ~/.config/
    * will prompt for choosing one file
  * killer \<process name\>
  * closeall \<process name\>
- 
+
  * e \<file name\>
  * e \<file name\> \<editor\>
  * o \<file name\>
